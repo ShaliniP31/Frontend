@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1>DOM Manipulation</h1> -->
+    <div>
+        <!-- <span id="one" name="First">
+            First span
+        </span>
+        <span id="two" name="Second">
+            Second span
+        </span> -->
+        <h1>My Favourite Food</h1>
+        <ul id="food">
+            <li>Pizza</li>
+            <li>Pasta</li>
+            <li>Burger</li>
+            <li>Sandwich</li>
+        </ul>
+        <button id="add">Add Chinese</button>
+        <button id="remove">Remove Burger</button>
+    </div>
+    <script>
+        // console.dir(document)
+        // document.title = 'DOM manipulation'
+        // const body = document.body
+        // body.append('hello')
+
+        // const div = document.createElement('div')
+        // div.innerText = "Hello"
+        // body.append(div)
+
+        // const h1 = document.getElementsByTagName('h1')
+        // console.log(h1)
+        // body.removeChild(h1[0])
+
+        // const div = document.querySelector('div')
+        // const spanOne = document.getElementById('one')
+        // const spanTwo = document.getElementById('two')
+
+
+        // console.log(spanOne.getAttribute('name'))
+        // spanOne.setAttribute('name', 'changed')
+        // spanOne.removeAttribute('name')
+        // spanOne.id = 'changed'
+        // spanTwo.classList.add('new-class')
+        // // spanTwo.classList.remove('new-class')
+
+        // spanOne.style.color = "red"
+        // spanTwo.style.backgroundColor = "green"
+
+        const add = document.querySelector('#add')
+        const remove = document.querySelector('#remove')
+        const food = document.querySelector('#food')
+
+        add.addEventListener('click', () => {
+            const newLi = document.createElement('li')
+            const newLiData = document.createTextNode('Chinese')
+            newLi.append(newLiData)
+            food.appendChild(newLi)
+        })
+
+        remove.addEventListener('click', () => {
+            const burger = document.querySelector('li:nth-child(3)')
+            food.removeChild(burger)
+        })
+    </script>
+</body>
+</html>

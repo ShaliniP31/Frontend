@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::before {
+            content: 'A';
+            /* display: block; */
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-color: green;
+            border: none;
+            border-radius: 50px;
+        }
+
+        p::after {
+            content: 'New';
+            background-color: grey;
+            opacity: 0.5;
+            border: none;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Active</p>
+</body>
+
+</html>

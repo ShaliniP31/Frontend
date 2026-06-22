@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">DOM - accessing elements</h1>
+    <ul>
+        <li class="list">By id</li>
+        <li>By class name</li>
+        <li class="list">By HTML Tag</li>
+        <li>By CSS selector</li>
+    </ul>
+
+    <script>
+        // console.log(document.getElementById("title"))
+        // console.log(document.getElementsByClassName('list'))
+        // let items = document.getElementsByTagName('li')
+        // console.log(items)
+        console.log(document.querySelectorAll('li'))
+    </script>
+</body>
+</html>

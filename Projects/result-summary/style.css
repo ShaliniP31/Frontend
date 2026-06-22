@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+body {
+    background-color: hsl(221, 100%, 96%);
+    font-family: "Hanken Grotesk", sans-serif;
+}
+
+#card {
+    display: flex;
+    align-items: normal;
+    margin: 150px auto;
+    border-radius: 20px;
+    background-color: hsl(0, 0%, 100%);
+    width: 500px;
+    left: 400px;
+    top: 250px;
+}
+
+#result {
+    color: white;
+    border-radius: 20px;
+    background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    width: 50%;
+    text-align: center;
+}
+
+#summary {
+    position: relative;
+    width: 50%;
+}
+
+#reaction {
+    background-color: hsla(0, 100%, 67%, 0.10);
+}
+
+#reaction p:nth-child(2) {
+    color: hsl(0, 100%, 67%);
+}
+
+#memory {
+    background-color: hsla(39, 100%, 56%, 0.10);
+}
+
+#memory p:nth-child(2) {
+    color: hsl(39, 100%, 56%);
+}
+
+#verbal {
+    background-color: hsla(166, 100%, 37%, 0.10);
+}
+
+#verbal p:nth-child(2) {
+    color: hsl(166, 100%, 37%);
+}
+
+#visual {
+    background-color: hsla(234, 85%, 45%, 0.10);
+}
+
+#visual p:nth-child(2) {
+    color: hsl(234, 85%, 45%);
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+    margin: 10px 20px 10px 20px;
+    padding: 0 5px 0px 5px;
+    border-radius: 10px;
+    width: 200px;
+}
+
+.row p:nth-last-child(2) {
+    margin-left: auto;
+    font-weight: bold;
+}
+
+.row p:last-child {
+    color: hsla(224, 30%, 27%, 0.5)
+}
+
+.gray {
+    color: hsl(241, 100%, 89%);
+}
+
+#summary p:first-child {
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+#circle {
+    border-radius: 50%;
+    background-image: linear-gradient(to top, hsla(241, 72%, 46%, 0), hsl(241, 81%, 54%));
+    width: 100px;
+    padding: 15px 15px 15px 15px;
+    margin: 0 0 0 60px;
+}
+
+.small-text {
+    font-size: small;
+}
+
+#res {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 10px 0 0 0;
+}
+
+#text {
+    width: 180px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#btn {
+    width: 200px;
+    background-color: hsl(224, 30%, 27%);
+    color:white;
+    justify-content: center;
+    align-items: center;
+    height:35px;
+    border-radius: 20px;
+    font-family: "Hanken Grotesk", sans-serif;
+}
+
+#btn:hover{
+    background-color: hsl(241, 81%, 54%)
+}
